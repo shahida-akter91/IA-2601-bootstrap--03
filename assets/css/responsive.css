@@ -1,0 +1,249 @@
+@media (max-width: 768px){
+#nav{
+    padding: 18px !important;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+
+   } 
+#nav .mobile_menu_bar{
+    background-color: transparent;
+    border:none;
+}
+
+}
+.mobile_menu_offcanvas{
+    max-width: 300%;
+}
+#hero h5 {
+font-size: 20px;
+}
+#hero h1{
+font-size: 40px;
+}
+#hero p{
+font-size: 16px;
+}
+
+
+/*======== feature ========/*
+  .feature-card {
+        padding: 30px 20px;
+    }
+
+    /* ২. মোবাইলে আইকনের সাইজ সামান্য ছোট করা */
+    .feature-card img {
+        width: 65px;
+        margin-bottom: 18px;
+    }
+
+    /* ৩. মোবাইলে কার্ডের টাইটেল ও বর্ণনার সাইজ ঠিক রাখা */
+    .feature-card h4 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .feature-card p {
+        font-size: 14px;
+    }
+/*===========Branding===========*/
+  .branding-box {
+        padding: 35px 25px 0 25px;
+        border-radius: 20px;
+        text-align: center; /* লেখা ও বাটন মাঝখানে সুন্দর দেখাবে */
+    }
+
+    /* ২. মোবাইলে শিরোনাম (Branding) একটু ছোট করা */
+    .branding-box h2 {
+        font-size: 32px !important;
+        margin-top: 25px; /* ওপরের ছবির সাথে কিছুটা গ্যাপ রাখবে */
+        margin-bottom: 15px;
+    }
+
+    /* ৩. মোবাইলে প্যারাগ্রাফ লেখার সাইজ আরামদায়ক করা */
+    .branding-box p {
+        font-size: 15px !important;
+        line-height: 160% !important;
+        margin-bottom: 25px;
+    }
+
+    /* ৪. লেখার নিচের ফাঁকা জায়গা কমিয়ে ব্যালেন্স করা */
+    .branding-box .col-lg-6:last-child {
+        padding-bottom: 35px;
+    }
+
+    /*==============help============*/
+      #help {
+        text-align: center;
+    }
+
+    #help .help-card {
+        text-align: left; /* মোবাইলেও কার্ডের ভেতরের আইকন ও লেখা বাম থেকে সাজানো থাকবে */
+    }
+
+    #help h2 {
+        font-size: 32px !important;
+        margin-bottom: 15px;
+    }
+
+    #help .col-lg-6 p {
+        font-size: 15px !important;
+    }
+
+    #help .stats-box h3 {
+        font-size: 30px !important;
+    }
+
+    #experience .parent::after {
+    top: 0;
+    left: -45px;
+  }
+  #experience .parent::before {
+    top: 11px;
+    left: -34px;
+  }
+  #experience .row{
+    padding-left: 50px;
+    position: relative;
+  }
+  #experience .row::after{
+    content: "";
+    position: absolute;
+    left: 25px;
+    top: 0;
+    height: 100%;
+    border-right: 2px dashed #7a7a7a;
+  }
+  #experience .parent .line{
+    display: none;
+  }
+
+
+  /*=========expert==========  
+     /* ১. মোবাইলে ট্যাব বাটনগুলো মাঝখানে আসবে এবং সাইজ সুন্দর হবে */
+    #myTab {
+        justify-content: center;
+        margin-top: 30px; /* ওপরের লেখা থেকে কিছুটা দূরত্ব রাখবে */
+        margin-bottom: 25px;
+    }
+
+    #myTab .nav-link {
+        padding: 10px 24px;
+        font-size: 15px;
+    }
+
+    /* ২. মোবাইলে প্রোগ্রেস বারের নাম ও শতাংশের ফন্ট সাইজ আরামদায়ক করা */
+    .lavel h4 {
+        font-size: 16px;
+    }
+
+    .lavel span {
+        font-size: 14px;
+    }
+
+    /*==========My Service=========*/
+    #feedback {
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#feedback:hover {
+    background-color: #F3F3F3; /* মাউস নিলে ব্যাকগ্রাউন্ড হালকা পরিবর্তন হবে */
+}
+
+     #services h2 {
+        font-size: 32px !important;
+        margin-bottom: 12px;
+    }
+
+    /* ২. শিরোনামের নিচের ছোট বর্ণনার সাইজ আরামদায়ক করা */
+    #services .service-subtitle {
+        font-size: 14px !important;
+        padding: 0 15px; /* মোবাইলের দুই কিনারায় যেন লেখা লেগে না যায় */
+    }
+
+    /* ৩. মোবাইলে ৩টি কার্ডের প্যাডিং ও উচ্চতা সমান রাখা */
+    #services .service-card,
+    #services .service-card.active-card {
+        padding: 35px 25px;
+    }
+
+    /* ৪. মোবাইলে আইকনের সাইজ সামান্য ছোট করা */
+    #services .service-card img {
+        width: 65px;
+        height: 65px;
+        margin-bottom: 18px;
+    }
+
+    /* ৫. কার্ডের ভেতরের লেখার সাইজ ব্যালেন্স করা */
+    #services .service-card h4 {
+        font-size: 20px;
+    }
+
+    #services .service-card p {
+        font-size: 14px;
+    }
+/*======================My Blog post============*/
+    
+
+  #blog .blog-card {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        text-align: left !important;
+    }
+
+    #blog .blog-img img {
+        width: 185px !important;
+        height: 185px !important;
+        margin-bottom: 0 !important;
+    }
+
+    #blog .blog-content {
+        margin-left: 24px !important;
+    }
+
+        /* ১. মোবাইলে হলুদ বক্সের প্যাডিং ও কোণা সুন্দর মাপে আনা */
+    .newsletter-box {
+        padding: 40px 25px;
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    /* ২. মোবাইলে শিরোনামটি সুন্দর মাপে ছোট করা */
+    .newsletter-box h2 {
+        font-size: 28px !important;
+    }
+
+    /* ৩. মোবাইলে ইমেইল ইনপুট বক্সের উচ্চতা ও জায়গা ঠিক রাখা */
+    .newsletter-form .form-control {
+        height: 55px;
+        padding-left: 15px;
+    }
+
+    /* ৪. মোবাইলে লাল বাটনটি যেন ভেঙে নিচে না নামে সেজন্য প্যাডিং কমানো */
+    .newsletter-form .send-btn {
+        padding: 0 20px;
+        font-size: 14px;
+    }
+    
+        #footer {
+        padding: 50px 20px !important;
+        text-align: center;
+    }
+
+    #footer h3 {
+        font-size: 26px !important;
+    }
+
+    #footer p {
+        margin: 0 auto;
+    }
+
+    /* মোবাইলে Follow Me ও সোশ্যাল আইকনগুলো মাঝখানে আনবে */
+    #footer .col-md-4:last-child {
+        justify-content: center !important;
+    }
+    
+
+ 
+
+  

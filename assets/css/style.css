@@ -1,0 +1,840 @@
+html, body {
+    overflow-x: hidden; 
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px !important; 
+    }
+}
+:root {
+  --font-family: "Poppins", sans-serif;
+  --second-family: "PT Sans", sans-serif;
+  --third-family: "Potta One", sans-serif;
+  --font3: "Baloo Da 2", sans-serif;
+  --font4: "Irish Grover", sans-serif;
+}
+body{
+    font-family: var(--font-family);
+
+}
+
+/*==========nav start=====*/
+#nav ul li a{
+font-family: var(--font-family);
+font-weight: 500;
+font-size: 15px;
+line-height: 200%;
+color: #353535;
+text-transform: uppercase;
+padding: 18px 20.5px !important;
+position: relative;
+}
+#nav ul li a:hover{
+color: #f8bc17;
+}
+#nav ul li a::after{
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color:#353535;
+  left:0;
+  bottom:0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+  #nav ul li a:hover::after{
+    opacity: 1;
+    visibility: visible;
+      width: 100%;
+  }
+
+
+/*==========nav end=======*/
+
+/*========= Hero Start=======*/
+#hero h5 {
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 24px;
+color: #353535;
+}
+#hero h1{
+font-family: var(--second-family);
+font-weight: 700;
+font-size: 64px;
+color: #353535;
+}
+#hero p {
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 20px;
+line-height: 190%;
+color: #353535;
+}
+ .btns{
+  display: flex;
+  gap:35px;
+
+}
+ .btns a:first-child {
+  background: #FFCC00;
+  display: inline-block;
+  padding: 16px 40px;
+  font-family: var(--font-family);
+ font-weight: 600;
+ font-size: 18px;
+ line-height: 180%;
+color: #fff;
+border-radius: 20px;
+text-decoration: none;
+ }
+ .btns a:last-child {
+  background: transfarent;
+  display: inline-block;
+  padding: 16px 40px;
+  font-family: var(--font-family);
+ font-weight: 600;
+ font-size: 18px;
+ line-height: 180%;
+color: #353535;
+border-radius: 20px;
+text-decoration: none;
+outline: 1px solid #353535;
+ }
+.follow{
+  margin-top: 48px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+#hero .social_icons{
+  display: flex;
+  gap: 32px;
+}
+
+#hero .social_icons a {
+    display: flex;
+    align-items: center;
+    line-height: 0;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #F4F3F3;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+#hero .social_icons a:hover{
+    transform: rotate(45deg);
+}
+#about {
+    background: linear-gradient(90deg, #FFCC00 0%, #FFF5CC 100%);
+    padding-top: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+#about .row {
+    display: flex;
+    align-items: flex-end; 
+}
+
+#about img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+#about .col-lg-6:last-child {
+    padding-bottom: 60px;
+}
+
+#about h2, 
+#about h3 {
+    font-size: 44px;
+    font-weight: 700;
+    color: #353535;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 16px;
+    color: #353535;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.about-outline-btn {
+    background-color: transparent !important;
+    border: 1px solid #353535 !important;
+    color: #353535 !important;
+    padding: 12px 32px;
+    border-radius: 14px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.about-outline-btn:hover {
+    background-color: #353535 !important;
+    color: #FFFFFF !important;
+}
+
+.green-shape {
+    position: absolute;
+    bottom: -65px;
+    right: -45px;
+    width: 140px;
+    height: 140px;
+    background-color: #52AB70;
+    border-radius: 50%;
+}
+ /*=====feature========*/
+.feature-card {
+    background-color: #FFFFFF;
+    padding: 45px 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+    height: 100%;
+    transition: 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card img {
+    width: 78px;
+    height: auto;
+    margin-bottom: 24px;
+}
+
+.feature-card h4 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #353535;
+    margin-bottom: 14px;
+}
+
+.feature-card p {
+    font-size: 16px;
+    color: #7A7A7A;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+/*======branding=======*/
+.branding-box {
+background: linear-gradient(90deg, #FFCC00 0%, #FFF5CC 100%);
+border-radius: 30px;
+padding: 50px 40px 0 40px;
+overflow: hidden;
+}
+/* পুরো বক্সটিকে ক্লিকেবল ও দাগমুক্ত রাখার কোড */
+.branding-link {
+    text-decoration: none;
+    display: block;
+    color: inherit;
+    cursor: pointer;
+}
+
+.branding-box {
+    transition: 0.3s ease;
+}
+
+/* বক্সের যেকোনো জায়গায় মাউস নিলে হালকা শ্যাডো ও নড়াচড়া দেখাবে */
+.branding-link:hover .branding-box {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+#branding h2{
+font-family: var(--second-family);
+font-weight: 700;
+font-size: 44px;
+color: #353535; 
+}
+#branding p{
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 18px;
+line-height: 190%;
+color: #353535;
+}
+.branding-btn {
+    background-color: transparent;
+    border: 1px solid #353535;
+    color: #353535;
+    padding: 12px 32px;
+    border-radius: 14px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.branding-btn:hover {
+    background-color: #353535;
+    color: #FFFFFF;
+}
+/*=====help========*/
+
+
+#help .help-card {
+    background-color: #FFFFFF;
+    padding: 20px 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+#help .help-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+#help .help-card img {
+    width: 58px;
+    height: 58px;
+    object-fit: contain;
+}
+
+#help .help-card h5 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #353535;
+    margin-bottom: 4px;
+}
+
+#help .help-card p {
+    font-size: 14px;
+    color: #7A7A7A;
+    margin-bottom: 0;
+}
+
+#help h2 {
+    font-size: 46px;
+    font-weight: 700;
+    color: #353535;
+    margin-bottom: 20px;
+}
+
+#help .col-lg-6 p {
+    font-size: 16px;
+    color: #353535;
+    line-height: 1.7;
+}
+
+#help .stats-box h3 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #353535;
+    margin-bottom: 5px;
+}
+
+#help .stats-box span {
+    font-size: 15px;
+    color: #7A7A7A;
+}
+
+
+#experience h2{
+font-family: var(--second-family);
+font-weight: 700;
+font-size: 50px;
+text-align: right;
+color: #353535;
+}
+#experience h4{
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 24px;
+line-height: 180%;
+color: #353535;
+}
+#experience p {
+font-family: var(--font-family);
+font-weight: 500;
+font-size: 18px;
+line-height: 180%;
+color: #7a7a7a;
+}
+#experience .parent {
+  position: relative;
+}
+#experience .parent::after {
+ content: "";
+ position: absolute;
+ width: 42px;
+ height: 42px;
+ top: 0;
+ right: -120px;
+ border-radius: 50%;
+ border: 2px dashed #7a7a7a; 
+ background-color: #fff;
+ z-index: 1;
+}
+#experience .parent::before{
+ content: "";
+ position: absolute;
+ width: 20px; 
+ height: 20px;
+ top: 10px;
+ right: -109px;
+ border-radius: 50%;
+ background-color: #52ab70;
+ z-index: 2; 
+}
+#experience .row{
+  position: relative;
+}
+  #experience .parent .line{
+  position: absolute;
+  height: 100%;
+  border: 2px dashed #7a7a7a;
+  right: -100px;
+  top:0;
+  } 
+#experience .row:nth-child(3n+1) .parent::before{
+  background-color: #52ab70;
+}
+#experience .row:nth-child(3n+3) .parent::before{
+  background-color: red;
+}
+#experience .row:nth-child(3n+4) .parent::before{
+  background-color: yellow;
+}
+#experience .row:nth-child(3n+5) .parent::before{
+  background-color: #52ab70;
+}
+
+
+/*==========skils=======*/
+#skills h2 {
+font-family: var(--second-family);
+font-weight: 700;
+font-size: 50px;
+color: #353535;
+}
+#skills p{
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 20px;
+line-height: 180%;
+color: #7a7a7a;
+}
+ .button {
+font-family: var(--font-family);
+font-weight: 500;
+font-size: 16px;
+line-height: 180%;
+color: #fff;
+display: inline-block;
+text-decoration: none;
+padding: 10px 20px;
+background-color: #FFCC00;
+ }
+
+ #skills .progress{
+    height: 6px;
+ }
+ #skills .progress-bar{
+    background-color: #f16500;
+ }
+  #skills h4{
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 18px;
+line-height: 180%;
+color: #353535;
+}
+#skills span{
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 18px;
+line-height: 180%;
+text-align: right;
+color: #f16500;
+}
+#myTab {
+    border-bottom: none;
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+#myTab .nav-link {
+    border: 1px solid transparent;
+    border-radius: 15px;
+    padding: 12px 35px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #353535;
+}
+
+/* যে বাটনটি সিলেক্ট (Active) করা থাকবে তার চারপাশে বর্ডার আসবে */
+#myTab .nav-link.active {
+    border: 1px solid #353535;
+    background-color: transparent;
+    color: #353535;
+    font-weight: 600;
+}
+
+/* ২. প্রোগ্রেস বারের নাম (Figma, Photoshop, XD, Illustrator) */
+.lavel h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #353535;
+    margin-bottom: 0;
+}
+
+/* ৩. প্রোগ্রেস বারের শতাংশ লেখা (85%, 75%) */
+.lavel span {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* ৪. প্রোগ্রেস বারের পেছনের হালকা ধূসর লাইন ও গোল কোণা */
+#myTabContent .progress {
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#myTabContent .progress-bar {
+    border-radius: 10px;
+}
+#skills button{
+ color:#000;
+}
+#skills button .active {
+    display: inline-block;
+    border: 1px solid;
+    padding: 15px 60px;
+    border-radius: 20px;
+}
+#skills nav-tabs{
+    border: none;
+}
+
+/*======MY service======*/
+#services {
+    background-color: #FFF7D5;
+}
+
+/* ২. ওপরের বড় শিরোনাম */
+#services h2 {
+    font-size: 46px;
+    font-weight: 700;
+    color: #353535;
+    margin-bottom: 15px;
+}
+
+/* ৩. শিরোনামের নিচের ছোট বর্ণনা (দুই লাইনে সুন্দরভাবে রাখার জন্য) */
+#services .service-subtitle {
+    max-width: 580px;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #7A7A7A;
+    line-height: 1.6;
+}
+/* ৪. সাধারণ সাদা কার্ডের ডিজাইন */
+#services .service-card {
+    background-color: #FFFFFF;
+    padding: 45px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+    transition: 0.3s ease;
+}
+
+/* ৫. মাঝখানের হলুদ কার্ডের আলাদা ডিজাইন (একটু উঁচু ও হলুদ গ্রেডিয়েন্ট) */
+#services .service-card.active-card {
+    background: linear-gradient(180deg, #FFCC00 0%, #FFE47A 100%);
+    padding: 65px 30px; /* ওপর-নিচে প্যাডিং বেশি দেওয়ায় কার্ডটি দুপাশের কার্ডের চেয়ে বড় দেখাবে */
+    box-shadow: 0 10px 30px rgba(255, 204, 0, 0.25);
+}
+
+/* ৬. কার্ডের ভেতরের আইকন ও লেখার স্টাইল */
+#services .service-card img {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    margin-bottom: 24px;
+}
+
+#services .service-card h4 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #353535;
+    margin-bottom: 14px;
+}
+
+#services .service-card p {
+    font-size: 15px;
+    color: #7A7A7A;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* ৭. হলুদ কার্ডের ভেতরের প্যারাগ্রাফ লেখাটি একটু গাঢ় হবে যাতে হলুদের ওপর স্পষ্ট পড়ে */
+#services .service-card.active-card p {
+    color: #353535;
+}
+/*===================Feedback======*/
+/* ১. সেকশনের হালকা অফ-হোয়াইট ব্যাকগ্রাউন্ড */
+#feedback {
+    background-color: #FAFAFA;
+}
+
+/* ২. ওপরের বড় শিরোনাম (Valuable feedback from my client) */
+#feedback h2 {
+    font-size: 46px;
+    font-weight: 700;
+    color: #353535;
+    line-height: 1.3;
+    margin-bottom: 18px;
+}
+
+/* ৩. শিরোনামের নিচের ছোট বর্ণনা */
+#feedback .feedback-subtitle {
+    max-width: 550px;
+    font-size: 16px;
+    color: #7A7A7A;
+    line-height: 1.6;
+}
+
+/* ৪. ডান পাশের রিভিউ লেখা */
+#feedback .review-text {
+    font-size: 18px;
+    color: #7A7A7A;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* ৫. ক্লায়েন্টের নাম (Albert Walkers) */
+#feedback h4 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #353535;
+    margin-bottom: 4px;
+}
+
+/* ৬. কোম্পানির নাম (Vivaco Group) */
+#feedback span {
+    font-size: 15px;
+    color: #7A7A7A;
+}
+.feedback-clickable {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+/*===============My Blog Post============*/
+
+#blog h2 {
+    font-size: 46px;
+    font-weight: 700;
+    color: #353535;
+}
+
+/* কার্ডের বাম পাশের ছবির সাইজ ও গোল কোণা */
+#blog .blog-img img {
+    width: 185px;
+    height: 185px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* তারিখ ও লেখকের নাম */
+#blog .blog-meta {
+    font-size: 13px;
+    color: #7A7A7A;
+}
+
+/* ব্লগের শিরোনাম */
+#blog .blog-content h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #353535;
+    line-height: 1.5;
+    margin-bottom: 18px;
+}
+
+/* Read More লিংক */
+#blog .read-more {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: #353535;
+    transition: 0.3s;
+}
+
+#blog .read-more:hover {
+    color: #FFCC00;
+}
+
+
+/*=====newsletter======*/
+.newsletter-box {
+    background: linear-gradient(90deg, #FFCC00 0%, #FFF5CC 100%);
+    border-radius: 30px;
+    padding: 65px 60px;
+}
+
+.newsletter-box span {
+    font-size: 16px;
+    font-weight: 500;
+    color: #353535;
+}
+
+.newsletter-box h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #353535;
+    margin: 5px 0 8px 0;
+}
+
+.newsletter-box p {
+    font-size: 15px;
+    color: #353535;
+    margin-bottom: 0;
+}
+
+/* ২. ডান পাশের সাদা ইনপুট বক্স (বাম কোণা গোল, ডান কোণা সমান) */
+.newsletter-form .form-control {
+    height: 65px;
+    border: none;
+    border-radius: 15px 0 0 15px;
+    padding-left: 25px;
+    font-size: 15px;
+    box-shadow: none;
+}
+
+/* ৩. ডান পাশের লাল/কোরাল রঙের বাটন (ডান কোণা গোল, বাম কোণা সমান) */
+.newsletter-form .send-btn {
+    background-color: #FF6565;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 0 15px 15px 0;
+    padding: 0 32px;
+    font-size: 15px;
+    font-weight: 500;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.newsletter-form .send-btn:hover {
+    background-color: #e65252;
+}
+
+.newsletter-box {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.newsletter-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(255, 204, 0, 0.25);
+}
+/* পুরো বক্সটি ক্লিকেবল লুক ও ক্লিক করলে রঙ পরিবর্তনের কোড */
+.newsletter-box {
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* বক্সটির যেকোনো জায়গায় মাউস দিয়ে ক্লিক (Active) করলে রঙ বদলাবে */
+.newsletter-box:active {
+    background: linear-gradient(90deg, #FF6565 0%, #FFB8B8 100%) !important;
+    transform: scale(0.99);
+}
+.newsletter-box.clicked-color {
+    background: linear-gradient(90deg, #FF6565 0%, #FFF5CC 100%) !important;
+}
+
+/*=======footer=======*/
+#footer {
+    background-color: #575757;
+    color: #FFFFFF;
+    padding: 70px 0 !important;
+}
+
+/* ২. মাঝখানের শিরোনাম (Let's work together) */
+#footer h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+}
+
+/* ৩. শিরোনামের নিচের হালকা লেখা */
+#footer p {
+    font-size: 14px;
+    color: #BBB9B9;
+    line-height: 1.7;
+    max-width: 440px;
+    margin-bottom: 0;
+}
+
+/* ৪. ডান পাশের হলুদ বাটন (Lets talk) */
+#footer .talk-btn {
+    background-color: #FFCC00;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+#footer .talk-btn:hover {
+    background-color: #e6b800;
+    transform: translateY(-3px);
+}
+
+/* ৫. নিচের Call, Email এবং Follow Me এর লেবেল */
+#footer span {
+    font-size: 14px;
+    color: #BBB9B9;
+    display: block;
+    margin-bottom: 4px;
+}
+
+/* ৬. ফোন নম্বর ও ইমেইল লেখা */
+#footer h5 {
+    font-size: 17px;
+    font-weight: 500;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+
+/* ৭. ডান পাশের গোল সোশ্যাল মিডিয়া বাটন */
+#footer .social-links a {
+    width: 42px;
+    height: 42px;
+    background-color: #484848;
+    color: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+#footer .social-links a:hover {
+    background-color: #FFCC00;
+    color: #353535;
+}
+#footer {
+    cursor: pointer;
+}
+
+
+/*======about img end===*/
+/*=========img strat==========*/

@@ -1,0 +1,734 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400..800&family=Irish+Grover&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Potta+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+  <body>
+
+
+
+    <!------nav bar start------>
+    <nav class="navbar navbar-expand-lg  py-0" id="nav">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+        <img src="assets/images/66.png" alt="ashikur">
+    </a>
+     <button class="d-lg-none mobile_menu_bar" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+   <i class="fa-solid fa-bars"></i>
+</button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">Home</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">About</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">Project</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">Bloges</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <!------nav bar end ------->
+
+
+
+    <!-----NAV OFCANBUS---->
+
+<div class="offcanvas mobile_menu_offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+  <img src="./assets/images/66.png" alt="">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">Home</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">About</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">Project</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">Bloges</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">Contact</a>
+        </li>
+      </ul>
+    
+
+  </div>
+
+  </div>
+</div>
+    <!-----NAV OFCANBUS END-->
+    <!--HERO-->
+    <section>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-2 order-lg-1">
+            <!--contents-->
+            <h5>
+              Hello, I'm Arif Rahman<span><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M29.34 21.3333C29.34 25.7467 25.7533 29.3333 21.34 29.3333V27.3333C24.6733 27.3333 27.34 24.6667 27.34 21.3333H29.34ZM0.00666658 8C0.00666658 3.58667 3.59333 0 8.00667 0V2C4.67333 2 2.00667 4.66667 2.00667 8H0.00666658ZM9.34 4.42667L3.22 10.56C-1.07333 14.8533 -1.07333 21.8267 3.22 26.12C7.51333 30.4133 14.4867 30.4133 18.78 26.12L28.2067 16.6667C28.86 16.04 28.86 14.9867 28.2067 14.3333C28.0518 14.1781 27.8679 14.055 27.6654 13.971C27.463 13.8869 27.2459 13.8437 27.0267 13.8437C26.8074 13.8437 26.5904 13.8869 26.3879 13.971C26.1854 14.055 26.0015 14.1781 25.8467 14.3333L19.9533 20.2267L19.0067 19.28L27.7267 10.56C28.38 9.90667 28.38 8.85333 27.7267 8.2C27.0733 7.54667 26.0067 7.54667 25.34 8.2L17.5933 16L16.6733 15.0267L25.8333 5.84C26.4867 5.18667 26.4867 4.13333 25.8333 3.48C25.18 2.82667 24.1267 2.82667 23.4733 3.48L14.2867 12.6667L13.34 11.7333L20.6733 4.42667C21.34 3.77333 21.34 2.72 20.6733 2.06667C20.0067 1.41333 18.9667 1.41333 18.3133 2.06667L8.15333 12.2267C8.94886 13.2528 9.34303 14.5338 9.26204 15.8297C9.18104 17.1256 8.63044 18.3475 7.71333 19.2667L6.76667 18.32C7.51574 17.57 7.93648 16.5533 7.93648 15.4933C7.93648 14.4333 7.51574 13.4167 6.76667 12.6667L6.3 12.2L11.7267 6.77333C12.38 6.12 12.38 5.06667 11.7267 4.41333C11.06 3.77333 10.0067 3.77333 9.34 4.42667V4.42667Z" fill="#FFD233" />
+</svg></span>
+            </h5>
+            <h1>UIUX and Graphic Designer</h1>
+            <p>With 10 years experience as a
+              Professional Web developer</p>
+              <div class="btns">
+                <a href="#">Lets talk<span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 2L11 13M22 2L15 22L11 13L2 9L22 2Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="white" />
+</svg></span></a>
+             <a download href="#">Download CV <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 21.9999V12.9999M12 21.9999L9.49996 19.9999M12 21.9999L14.5 19.9999M5.03396 9.11694C4.08817 9.35494 3.26184 9.9301 2.71021 10.7344C2.15859 11.5387 1.91964 12.5167 2.03827 13.4847C2.15689 14.4528 2.62492 15.3442 3.35443 15.9914C4.08393 16.6387 5.02469 16.9974 5.99996 16.9999H6.99996" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#353535" />
+  <path d="M15.8299 7.13796C15.4881 5.78453 14.6445 4.6117 13.47 3.85722C12.2956 3.10274 10.8782 2.82305 9.50517 3.07487C8.13215 3.32668 6.90625 4.09115 6.07598 5.2133C5.2457 6.33545 4.87318 7.73133 5.03392 9.11796C5.03392 9.11796 5.18692 9.99996 5.49992 10.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#353535" />
+  <path d="M17 17C17.706 16.9995 18.404 16.8495 19.0479 16.5599C19.6917 16.2702 20.267 15.8475 20.7357 15.3195C21.2045 14.7915 21.5561 14.1702 21.7674 13.4965C21.9787 12.8229 22.045 12.1121 21.9618 11.4109C21.8786 10.7098 21.6479 10.0343 21.2848 9.42874C20.9217 8.82321 20.4345 8.30145 19.8552 7.89778C19.276 7.49412 18.6178 7.21772 17.924 7.08676C17.2302 6.9558 16.5166 6.97327 15.83 7.138L14.5 7.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#353535" />
+</svg></span></a>
+              </div>
+
+
+           <!------follow Me---->
+           <div class="follow">
+            <div class="d-flex align-items-center gap-3">
+              <p class="mb-0">Follow Me :</p>
+              <div class="social_icons">
+              </div>
+              <a href=""><svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M17.4167 9.08334C17.4181 10.181 17.202 11.268 16.7808 12.2816C16.3596 13.2952 15.7418 14.2153 14.9629 14.9888C14.1905 15.7599 13.2736 16.3712 12.2647 16.7878C11.2559 17.2044 10.1748 17.4181 9.08334 17.4167C4.48084 17.4167 0.750008 13.6858 0.750008 9.08334C0.747094 6.94658 1.56787 4.89091 3.04167 3.34376C3.81932 2.52317 4.75622 1.8699 5.79506 1.42392C6.8339 0.977932 7.95282 0.748618 9.08334 0.750007C10.1748 0.748593 11.2559 0.962292 12.2647 1.37889C13.2736 1.79548 14.1905 2.40681 14.9629 3.17792C15.7418 3.95135 16.3596 4.87146 16.7808 5.88507C17.202 6.89868 17.4181 7.98571 17.4167 9.08334V9.08334Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="black" />
+  <path d="M17.4166 9.08323C16.2008 9.08323 12.8466 8.6249 9.84454 9.94281C6.58329 11.3749 4.22204 13.5961 3.19287 14.9778" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="black" />
+  <path d="M5.95825 1.35596C7.26242 2.55971 10.1083 5.62429 11.1666 8.66679C12.2249 11.7093 12.6166 15.4501 12.8583 16.5147" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="black" />
+  <path d="M0.814209 8.04155C2.38838 8.13655 6.55546 8.22197 9.22213 7.08322C11.8888 5.94447 14.1834 3.84989 14.9705 3.1853M1.37504 12.2553C2.10934 14.0328 3.43367 15.5029 5.12504 16.4182" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="black" />
+  <path d="M0.750008 9.08334C0.747094 6.94658 1.56787 4.8909 3.04167 3.34376M9.08334 0.750006C7.95282 0.748617 6.8339 0.977932 5.79506 1.42392C4.75622 1.8699 3.81932 2.52317 3.04167 3.34376M12.4167 1.44334C13.3657 1.85856 14.2291 2.44677 14.9629 3.17792C15.7418 3.95135 16.3596 4.87145 16.7808 5.88507C17.202 6.89868 17.4181 7.98571 17.4167 9.08334C17.4167 10.1092 17.2313 11.0921 16.8917 12M9.08334 17.4167C10.1748 17.4181 11.2559 17.2044 12.2647 16.7878C13.2736 16.3712 14.1905 15.7599 14.9629 14.9888" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="black" />
+</svg></a>
+            <a href=""><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g clip-path="url(#clip0_42_32)">
+    <path d="M18.3333 5.83341H12.5V4.16675H18.3333V5.83341ZM19.7717 14.1667C19.4033 15.2476 18.0808 16.6667 15.5208 16.6667C12.9592 16.6667 10.8842 15.2259 10.8842 11.9376C10.8842 8.67925 12.8217 7.00425 15.4392 7.00425C18.0075 7.00425 19.5758 8.48925 19.9183 10.6926C19.9833 11.1142 20.0092 11.6826 19.9975 12.4759H13.3083C13.4167 15.1517 16.2108 15.2359 17.1317 14.1667H19.7717ZM13.3667 10.8334H17.5042C17.4167 9.54425 16.5575 8.98425 15.44 8.98425C14.2183 8.98425 13.5425 9.62425 13.3667 10.8334ZM5.38833 16.6567H0V4.18425H5.79417C10.3575 4.25175 10.4442 8.72091 8.06083 9.93925C10.945 10.9892 11.0417 16.6567 5.38833 16.6567V16.6567ZM2.5 9.16675H5.48667C7.57667 9.16675 7.90833 6.66675 5.22667 6.66675H2.5V9.16675ZM5.32583 11.6667H2.5V14.1801H5.28417C7.83 14.1801 7.67417 11.6667 5.32583 11.6667V11.6667Z" fill="black" />
+  </g>
+  <defs>
+    <clipPath id="clip0_42_32">
+      <rect width="20" height="20" fill="white"/>
+    </clipPath>
+  </defs>
+</svg></a>
+   <a href=""><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g clip-path="url(#clip0_42_36)">
+    <path d="M6.22075 0.888252C7.19825 0.843252 7.50992 0.833252 9.99992 0.833252C12.4899 0.833252 12.8016 0.844085 13.7783 0.888252C14.7549 0.932419 15.4216 1.08825 16.0049 1.31409C16.6158 1.54492 17.1699 1.90575 17.6283 2.37242C18.0949 2.82992 18.4549 3.38325 18.6849 3.99492C18.9116 4.57825 19.0666 5.24492 19.1116 6.21992C19.1566 7.19909 19.1666 7.51075 19.1666 9.99992C19.1666 12.4899 19.1558 12.8016 19.1116 13.7791C19.0674 14.7541 18.9116 15.4208 18.6849 16.0041C18.4549 16.6158 18.0943 17.1701 17.6283 17.6283C17.1699 18.0949 16.6158 18.4549 16.0049 18.6849C15.4216 18.9116 14.7549 19.0666 13.7799 19.1116C12.8016 19.1566 12.4899 19.1666 9.99992 19.1666C7.50992 19.1666 7.19825 19.1558 6.22075 19.1116C5.24575 19.0674 4.57909 18.9116 3.99575 18.6849C3.38402 18.4549 2.82977 18.0943 2.37159 17.6283C1.90524 17.1705 1.54435 16.6165 1.31409 16.0049C1.08825 15.4216 0.933252 14.7549 0.888252 13.7799C0.843252 12.8008 0.833252 12.4891 0.833252 9.99992C0.833252 7.50992 0.844085 7.19825 0.888252 6.22159C0.932419 5.24492 1.08825 4.57825 1.31409 3.99492C1.54469 3.38332 1.90585 2.82935 2.37242 2.37159C2.82995 1.90534 3.38365 1.54445 3.99492 1.31409C4.57825 1.08825 5.24492 0.933252 6.21992 0.888252H6.22075ZM13.7041 2.53825C12.7374 2.49409 12.4474 2.48492 9.99992 2.48492C7.55242 2.48492 7.26242 2.49409 6.29575 2.53825C5.40159 2.57909 4.91659 2.72825 4.59325 2.85409C4.16575 3.02075 3.85992 3.21825 3.53909 3.53909C3.23496 3.83496 3.0009 4.19515 2.85409 4.59325C2.72825 4.91659 2.57909 5.40159 2.53825 6.29575C2.49409 7.26242 2.48492 7.55242 2.48492 9.99992C2.48492 12.4474 2.49409 12.7374 2.53825 13.7041C2.57909 14.5983 2.72825 15.0833 2.85409 15.4066C3.00075 15.8041 3.23492 16.1649 3.53909 16.4608C3.83492 16.7649 4.19575 16.9991 4.59325 17.1458C4.91659 17.2716 5.40159 17.4208 6.29575 17.4616C7.26242 17.5058 7.55159 17.5149 9.99992 17.5149C12.4483 17.5149 12.7374 17.5058 13.7041 17.4616C14.5983 17.4208 15.0833 17.2716 15.4066 17.1458C15.8341 16.9791 16.1399 16.7816 16.4608 16.4608C16.7649 16.1649 16.9991 15.8041 17.1458 15.4066C17.2716 15.0833 17.4208 14.5983 17.4616 13.7041C17.5058 12.7374 17.5149 12.4474 17.5149 9.99992C17.5149 7.55242 17.5058 7.26242 17.4616 6.29575C17.4208 5.40159 17.2716 4.91659 17.1458 4.59325C16.9791 4.16575 16.7816 3.85992 16.4608 3.53909C16.1649 3.23498 15.8047 3.00093 15.4066 2.85409C15.0833 2.72825 14.5983 2.57909 13.7041 2.53825V2.53825ZM8.82909 12.8258C9.48297 13.0979 10.2111 13.1347 10.889 12.9297C11.567 12.7247 12.1527 12.2907 12.5463 11.7018C12.9398 11.1129 13.1166 10.4056 13.0466 9.70084C12.9766 8.99603 12.6641 8.3374 12.1624 7.83742C11.8426 7.51782 11.4559 7.2731 11.0302 7.12087C10.6045 6.96865 10.1503 6.91272 9.70033 6.9571C9.25039 7.00148 8.81588 7.14507 8.42809 7.37753C8.0403 7.60999 7.70887 7.92554 7.45767 8.30146C7.20647 8.67738 7.04174 9.10433 6.97535 9.55155C6.90895 9.99878 6.94254 10.4552 7.0737 10.8878C7.20486 11.3205 7.43032 11.7188 7.73385 12.0539C8.03739 12.3889 8.41144 12.6526 8.82909 12.8258ZM6.66825 6.66825C7.10577 6.23073 7.62519 5.88367 8.19683 5.64689C8.76848 5.4101 9.38117 5.28823 9.99992 5.28823C10.6187 5.28823 11.2314 5.4101 11.803 5.64689C12.3747 5.88367 12.8941 6.23073 13.3316 6.66825C13.7691 7.10577 14.1162 7.62519 14.353 8.19683C14.5897 8.76848 14.7116 9.38117 14.7116 9.99992C14.7116 10.6187 14.5897 11.2314 14.353 11.803C14.1162 12.3747 13.7691 12.8941 13.3316 13.3316C12.448 14.2152 11.2495 14.7116 9.99992 14.7116C8.7503 14.7116 7.55187 14.2152 6.66825 13.3316C5.78464 12.448 5.28823 11.2495 5.28823 9.99992C5.28823 8.7503 5.78464 7.55187 6.66825 6.66825V6.66825ZM15.7566 5.98992C15.865 5.88764 15.9518 5.76465 16.0118 5.62823C16.0719 5.49181 16.1039 5.34473 16.1061 5.19569C16.1083 5.04666 16.0805 4.89871 16.0245 4.76059C15.9685 4.62248 15.8853 4.49701 15.7799 4.39162C15.6745 4.28623 15.549 4.20305 15.4109 4.14702C15.2728 4.09098 15.1248 4.06323 14.9758 4.0654C14.8268 4.06758 14.6797 4.09963 14.5433 4.15967C14.4069 4.2197 14.2839 4.3065 14.1816 4.41492C13.9827 4.62578 13.8738 4.90585 13.878 5.19569C13.8822 5.48553 13.9992 5.76232 14.2042 5.96729C14.4092 6.17226 14.686 6.28928 14.9758 6.2935C15.2657 6.29773 15.5457 6.18883 15.7566 5.98992V5.98992Z" fill-rule="evenodd" clip-rule="evenodd" fill="black" />
+  </g>
+  <defs>
+    <clipPath id="clip0_42_36">
+      <rect width="20" height="20" fill="white" />
+    </clipPath>
+  </defs>
+</svg></a>
+    <a href=""><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g clip-path="url(#clip0_42_28)">
+    <path d="M10 0C4.475 0 0 4.475 0 10C0 14.425 2.8625 18.1625 6.8375 19.4875C7.3375 19.575 7.525 19.275 7.525 19.0125C7.525 18.775 7.5125 17.9875 7.5125 17.15C5 17.6125 4.35 16.5375 4.15 15.975C4.0375 15.6875 3.55 14.8 3.125 14.5625C2.775 14.375 2.275 13.9125 3.1125 13.9C3.9 13.8875 4.4625 14.625 4.65 14.925C5.55 16.4375 6.9875 16.0125 7.5625 15.75C7.65 15.1 7.9125 14.6625 8.2 14.4125C5.975 14.1625 3.65 13.3 3.65 9.475C3.65 8.3875 4.0375 7.4875 4.675 6.7875C4.575 6.5375 4.225 5.5125 4.775 4.1375C4.775 4.1375 5.6125 3.875 7.525 5.1625C8.325 4.9375 9.175 4.825 10.025 4.825C10.875 4.825 11.725 4.9375 12.525 5.1625C14.4375 3.8625 15.275 4.1375 15.275 4.1375C15.825 5.5125 15.475 6.5375 15.375 6.7875C16.0125 7.4875 16.4 8.375 16.4 9.475C16.4 13.3125 14.0625 14.1625 11.8375 14.4125C12.2 14.725 12.5125 15.325 12.5125 16.2625C12.5125 17.6 12.5 18.675 12.5 19.0125C12.5 19.275 12.6875 19.5875 13.1875 19.4875C15.1726 18.8173 16.8976 17.5414 18.1197 15.8395C19.3418 14.1375 19.9994 12.0952 20 10C20 4.475 15.525 0 10 0Z" fill-rule="evenodd" clip-rule="evenodd" fill="black" />
+  </g>
+  <defs>
+    <clipPath id="clip0_42_28">
+      <rect width="20" height="20" fill="white" />
+    </clipPath>
+  </defs>
+</svg></a>
+
+
+            </div>
+           </div>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2">
+            <!--image-->
+            <img class="img-fluid"src="assets/images/55.png" alt="">
+            </div>
+        </div>
+        </div>
+      </div>
+     <!-- About Me Section Start -->
+<section id="about" class="about-section">
+    <div class="container">
+        <div class="row">
+            
+            <!-- বাম পাশের ছবির ঘর -->
+            <div class="col-lg-6">
+                <img class="img-fluid" src="./assets/images/yyy.png" alt="About Me">
+            </div>
+
+            <!-- ডান পাশের লেখার ঘর -->
+            <div class="col-lg-6">
+                <h2>About Me</h2>
+                <p>With 10 years experience as a professional Web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration.</p>
+                <button type="button" class="about-outline-btn">See More</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- নিচের ডান কোণার সবুজ শেপ -->
+    <div class="green-shape"></div>
+  </section>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>.
+    <!--HERO END-->
+    
+
+            </div>
+       </div>
+  
+      
+  </section>
+<!--------------Feature------------>
+
+  <section id="feature" class="py-5">
+    <div class="container">
+        <div class="row g-4">
+            
+            <!-- ১ নম্বর কার্ড -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="feature-card text-center">
+                    <img src="assets/images/888.png" alt="Pixel Perfect">
+                    <h4>Pixel Perfect</h4>
+                    <p>Most common methods for designing websites that work well on desktop is responsive and adaptive design.</p>
+                </div>
+            </div>
+
+            <!-- ২ নম্বর কার্ড -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="feature-card text-center">
+                    <img src="assets/images/Nusrat 01.png" alt="High Quality">
+                    <h4>High Quality</h4>
+                    <p>Most common methods for designing websites that work well on desktop is responsive and adaptive design.</p>
+                </div>
+            </div>
+
+            <!-- ৩ নম্বর কার্ড -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="feature-card text-center">
+                    <img src="assets/images/000000.png" alt="Awesome Idea">
+                    <h4>Awesome Idea</h4>
+                    <p>Most common methods for designing websites that work well on desktop is responsive and adaptive design.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!--------------Branding------------>
+<section id="branding" class="py-5">
+    <div class="container">
+        
+        <!-- হলুদ রঙের মূল কার্ড বক্স -->
+        <a href="#" class="branding-link">
+    
+        <div class="branding-box">
+            <div class="row align-items-center">  
+                <!-- বাম পাশের ছবির কলাম (৬ ভাগ) -->
+           
+             
+              <div class="col-12 col-lg-6 text-center">
+                    <img src="assets/images/shahida 04.png" class="img-fluid" alt="Branding">
+                </div>
+
+                <!-- ডান পাশের লেখার কলাম (৬ ভাগ) -->
+                <div class="col-12 col-lg-6">
+                    <h2>Branding</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet ornare id faucibus nunc fusce tellus scelerisque adipiscing lorem. Mollis tortor, mattis urna imperdiet.</p>
+                    <button type="button" class="branding-btn">See Project</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!------------Help--------->
+<section id="help" class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            
+            <!-- বাম পাশের কলাম: ৩টি ছোট কার্ড (৪ ভাগ জায়গা) -->
+            <div class="col-12 col-lg-4">
+                
+                <!-- ১ নম্বর কার্ড -->
+                <div class="help-card d-flex align-items-center mb-3">
+                    <img src="assets/images/Nayma01.png" alt="Website Design">
+                    <div class="ms-3">
+                        <h5>Website Design</h5>
+                        <p>712 project</p>
+                    </div>
+                </div>
+
+                <!-- ২ নম্বর কার্ড -->
+                <div class="help-card d-flex align-items-center mb-3">
+                    <img src="assets/images/Nayma 02.png" alt="Mobile App Design">
+                    <div class="ms-3">
+                        <h5>Mobile App Design</h5>
+                        <p>712 project</p>
+                    </div>
+                </div>
+
+                <!-- ৩ নম্বর কার্ড -->
+                <div class="help-card d-flex align-items-center">
+                    <img src="assets/images/Nayma 03.png" alt="">
+                    <div class="ms-3">
+                        <h5>Brand Identity</h5>
+                        <p>712 project</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ডান পাশের কলাম: মাঝখানে ২ ভাগ ফাঁকা রেখে ৬ ভাগ জায়গা (৪ + ২ + ৬ = ১২) -->
+            <div class="col-12 col-lg-6 offset-lg-2 text-lg-end mt-5 mt-lg-0">
+                <h2>What Do I Help?</h2>
+                <p>I will help you with finding a solution and solve your problems. We use process design to create digital products. Beside that also help their business.</p>
+                
+                <!-- নিচের সংখ্যার অংশ (250+ এবং 150+) -->
+                <div class="stats-box d-flex justify-content-center justify-content-lg-end gap-5 mt-4">
+                    <div>
+                        <h3>250+</h3>
+                        <span>Project Completed</span>
+                    </div>
+                    <div>
+                        <h3>150+</h3>
+                        <span>Happy Clients</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+  
+    <section id="experience">
+        <div class="container">
+            <h2 class="text-center">My Work Experience</h2>
+             <br>
+             <br>
+             <br>
+            <div class="row justify-content-between">
+                <div class="col-lg-3 parent">
+                    <h4>Self Employ, India</h4>
+                    <p>Sep 2019 - Aug 2020</p>
+                    <div class="line"></div>
+                </div>
+                <div class="col-lg-6">
+                    <h4>
+                        Visual Designer
+                    </h4>
+                    <p>A Visual designe design for a varaity of platforms which may includes internat and internet sites, games, movies and wareable. In short, they create the concept. </p>
+                </div>
+            </div>
+            
+            <div class="row justify-content-between">
+                <div class="col-lg-3 parent">
+                    <h4>New Man Service</h4>
+                    <p>Sep 2019 - Aug 2020</p>
+                    <div class="line"></div>
+                </div>
+                <div class="col-lg-6">
+                    <h4>
+                        UI/UX Designer
+                    </h4>
+                    <p>A Visual designe design for a varaity of platforms which may includes internat and internet sites, games, movies and wareable. In short, they create the concept. </p>
+                </div>
+            </div>
+            
+            <div class="row justify-content-between">
+                <div class="col-lg-3 parent">
+                    <h4>Global Solution</h4>
+                    <p>Sep 2019 - Aug 2020</p>
+                    <div class="line"></div>
+                </div>
+                <div class="col-lg-6">
+                    <h4>
+                    Sr. Product Designer
+                    </h4>
+                    <p>A Visual designe design for a varaity of platforms which may includes internat and internet sites, games, movies and wareable. In short, they create the concept. </p>
+                </div>
+            </div>
+            
+            <div class="row justify-content-between">
+                <div class="col-lg-3 parent">   
+                    <div class="line"></div>
+                </div>
+                <div class="col-lg-6">
+            </div>
+
+        </div>
+    </section>
+
+
+     <!-----expert------>
+
+
+
+     <section id="skills">
+   <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-lg-5">
+        <br>
+        <br>
+        <h2>My Expert Areas</h2>
+        <p>You can express yourself however you want and whenever you want, for free. You can customize a template or make your own from scratch, with an immersive library at your disposal. You can express yourself however you want and whenever you free.</p>
+        <p>You can customize a template or make your own from scratch, with an immersive library at your disposal.</p>
+        <div class="button">
+        <a href="#">Download CV<span><img src="assets/images/akar-icons_cloud-download.png" alt=""></span></a>
+        </div>
+
+      </div>
+      <div class="col-lg-4">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Skills</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Education</button>
+  </li>
+</ul>
+  <div class="tab-content" id="myTabContent">
+
+    <!-- ১. Home বাটনে ক্লিক করলে যা দেখাবে (ফাঁকা রাখা হলো) -->
+    <div class="tab-pane fade" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+    </div>
+
+    <!-- ২. Profile বাটনে ক্লিক করলে এই ৪টি প্রোগ্রেস বার দেখাবে -->
+    <div class="tab-pane fade show active" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+        
+        <!-- ১ম: Figma (85%) -->
+        <div class="mb-4">
+            <div class="lavel d-flex align-items-center justify-content-between" style="width: 85%">
+                <div><h4>Figma</h4></div>
+                <div><span style="color: #F16500;">85%</span></div>
+            </div>
+            <div class="progress" style="height: 6px;">
+                <div class="progress-bar" style="width: 85%; background-color: #F16500;"></div>
+            </div>
+        </div>
+
+        <!-- ২য়: Photoshop (75%) -->
+        <div class="mb-4">
+            <div class="lavel d-flex align-items-center justify-content-between" style="width: 75%">
+                <div><h4>Photoshop</h4></div>
+                <div><span style="color: #03249B;">75%</span></div>
+            </div>
+            <div class="progress" style="height: 6px;">
+                <div class="progress-bar" style="width: 75%; background-color: #03249B;"></div>
+            </div>
+        </div>
+
+        <!-- ৩য়: XD (80%) -->
+        <div class="mb-4">
+            <div class="lavel d-flex align-items-center justify-content-between" style="width: 80%">
+                <div><h4>XD</h4></div>
+                <div><span style="color: #700D60;">80%</span></div>
+            </div>
+            <div class="progress" style="height: 6px;">
+                <div class="progress-bar" style="width: 80%; background-color: #700D60;"></div>
+            </div>
+        </div>
+
+        <!-- ৪র্থ: Illustrator (70%) -->
+        <div class="mb-4">
+            <div class="lavel d-flex align-items-center justify-content-between" style="width: 70%">
+                <div><h4>Illustrator</h4></div>
+                <div><span style="color: #234BDA;">70%</span></div>
+            </div>
+            <div class="progress" style="height: 6px;">
+                <div class="progress-bar" style="width: 70%; background-color: #234BDA;"></div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+  <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0"><div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar" style="width: 85%"></div>
+</div></div>
+      </div>
+    </div>
+   </div>
+   </section>
+<!----------------My Service ------------>
+<!-- My Services সেকশন শুরু -->
+<section id="services" class="py-5">
+    <div class="container">
+        
+        <!-- ১. ওপরের শিরোনাম ও বর্ণনা -->
+        <div class="text-center mb-5">
+            <h2>My Sevices</h2>
+            <p class="service-subtitle">Most common methods for designing websites that work well on desktop is responsive and adaptive design</p>
+        </div>
+
+        <!-- ২. নিচের ৩টি কার্ড (৪ + ৪ + ৪ = ১২ ভাগ) -->
+        <div class="row g-4 align-items-center">
+            
+            <!-- ১ নম্বর সাদা কার্ড -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="service-card text-center">
+                    <img src="assets/images/Nayma 04.png" alt="Creative Design">
+                    <h4>Creative Design</h4>
+                    <p>Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development</p>
+                </div>
+            </div>
+
+            <!-- ২ নম্বর মাঝখানের হলুদ কার্ড (আলাদা ক্লাস 'active-card' দেওয়া হলো) -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="service-card active-card text-center">
+                    <img src="assets/images/nayma 07.png" alt="UI/UX Design">
+                    <h4>UI/UX Design</h4>
+                    <p>Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development</p>
+                </div>
+            </div>
+
+            <!-- ৩ নম্বর সাদা কার্ড -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="service-card text-center">
+                    <img src="assets/images/nayma 06.png" alt="Web Design">
+                    <h4>Web Design</h4>
+                    <p>Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!------------Feedback------------>
+<section id="feedback" class="py-5">
+  <a href="#" class="feedback-clickable">
+    <div class="container">
+        
+        <!-- ১. ওপরের শিরোনাম ও বর্ণনা (বাম পাশে থাকবে) -->
+        <div class="mb-5">
+            <h2>Valuable feedback <br> from my client</h2>
+            <p class="feedback-subtitle">Most common methods for designing websites that work well on desktop is responsive and adaptive design</p>
+        </div>
+
+        <!-- ২. নিচের ছবি ও রিভিউয়ের অংশ (৫ + ৭ = ১২ ভাগ) -->
+        <div class="row align-items-center">
+            
+            <!-- বাম পাশের ক্লায়েন্টের ছবি (৫ ভাগ) -->
+            <div class="col-12 col-lg-5 text-center mb-4 mb-lg-0">
+                <img src="assets/images/nayma 09.svg" class="img-fluid" alt="Albert Walkers">
+            </div>
+
+            <!-- ডান পাশের রিভিউ লেখা ও নাম (৭ ভাগ) -->
+            <div class="col-12 col-lg-7">
+                <div class="feedback-content ps-lg-4">
+                    <p class="review-text">“Awesome website! Easy to use and edit, it has a lot of options to design whatever you need, it is professional and fun. I was very successful creating my profile using designer which gave me unbelievable reach & appreciation.”</p>
+                    <h4>Albert Walkers</h4>
+                    <span>Vivaco Group</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!--------------Block Post--------------->
+<!-- Blog Post সেকশন শুরু -->
+<section id="blog" class="py-5">
+    <div class="container">
+        
+        <!-- ১. ওপরের শিরোনাম (ডান পাশে থাকবে) -->
+        <div class="text-lg-end mb-5">
+            <h2>From My Blog Post</h2>
+        </div>
+
+        <!-- ২. নিচের ৪টি ব্লগ কার্ড (৬ + ৬ = ১২ ভাগ করে পাশাপাশি ২টি করে বসবে) -->
+        <div class="row g-4">
+            
+            <!-- ১ নম্বর ব্লগ কার্ড -->
+            <div class="col-12 col-lg-6">
+                <div class="blog-card d-flex align-items-center">
+                    <div class="blog-img">
+                        <img src="assets/images/nayma 10.png" alt="Blog 1">
+                    </div>
+                    <div class="blog-content ms-4">
+                        <div class="blog-meta mb-2">
+                            <span>📅 02 June, 2022</span>
+                            <span class="ms-3 text-dark fw-medium">John Smith</span>
+                        </div>
+                        <h4>Diversification of digital marketing strategies</h4>
+                        <a href="#" class="read-more">Read More ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ২ নম্বর ব্লগ কার্ড -->
+            <div class="col-12 col-lg-6">
+                <div class="blog-card d-flex align-items-center">
+                    <div class="blog-img">
+                        <img src="assets/images/Nayma 12.png" alt="Blog 2">
+                    </div>
+                    <div class="blog-content ms-4">
+                        <div class="blog-meta mb-2">
+                            <span>📅 02 June, 2022</span>
+                            <span class="ms-3 text-dark fw-medium">John Smith</span>
+                        </div>
+                        <h4>Diversification of digital marketing strategies</h4>
+                        <a href="#" class="read-more">Read More ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ৩ নম্বর ব্লগ কার্ড -->
+            <div class="col-12 col-lg-6">
+                <div class="blog-card d-flex align-items-center">
+                    <div class="blog-img">
+                        <img src="assets/images/Nayma 11.png" alt="Blog 3">
+                    </div>
+                    <div class="blog-content ms-4">
+                        <div class="blog-meta mb-2">
+                            <span>📅 02 June, 2022</span>
+                            <span class="ms-3 text-dark fw-medium">John Smith</span>
+                        </div>
+                        <h4>Diversification of digital marketing strategies</h4>
+                        <a href="#" class="read-more">Read More ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ৪ নম্বর ব্লগ কার্ড -->
+            <div class="col-12 col-lg-6">
+                <div class="blog-card d-flex align-items-center">
+                    <div class="blog-img">
+                        <img src="assets/images/Nayam 13.png" alt="Blog 4">
+                    </div>
+                    <div class="blog-content ms-4">
+                        <div class="blog-meta mb-2">
+                            <span>📅 02 June, 2022</span>
+                            <span class="ms-3 text-dark fw-medium">John Smith</span>
+                        </div>
+                        <h4>Diversification of digital marketing strategies</h4>
+                        <a href="#" class="read-more">Read More ↗</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-------newsletter-------->
+<section id="newsletter" class="py-5">
+    <div class="container">
+        <div class="newsletter-box">
+            <div class="row align-items-center">
+                
+                <!-- বাম পাশের লেখা (৬ ভাগ) -->
+                <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+                    <span>Subscribe Now</span>
+                    <h2>Get My Newsletter</h2>
+                    <p>Get latest news, updates, tips and trics in your inbox</p>
+                </div>
+
+                <!-- ডান পাশের ইমেইল ফর্ম ও বাটন (৬ ভাগ) -->
+                <div class="col-12 col-lg-6">
+                    <form class="newsletter-form d-flex">
+                        <input type="email" class="form-control" placeholder="Your email here" required>
+                        <button type="submit" class="send-btn">Send Now</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!------------------Footer Section-------------->
+<footer id="footer" class="py-5">
+    <a href="#" style="text-decoration: none; display: block;">
+    <div class="container">
+        
+        <!-- ১. ওপরের সারি: লোগো, লেখা এবং বাটন (৩ + ৬ + ৩ = ১২ ভাগ) -->
+        <div class="row align-items-center mb-5">
+            
+            <!-- বাম পাশের লোগো -->
+            <div class="col-12 col-lg-3 mb-4 mb-lg-0">
+                <a href="#" class="footer-logo">
+                    <img src="assets/images/Nusrat 02.svg" alt="ASHIKUR">
+                </a>
+            </div>
+
+            <!-- মাঝখানের লেখা -->
+            <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+                <h3>Let's work together</h3>
+                <p>You can express yourself however you want and whenever you want, for free. You can customize a template or make your own.</p>
+            </div>
+
+            <!-- ডান পাশের হলুদ বাটন -->
+            <div class="col-12 col-lg-3 text-lg-end">
+                <a href="#" class="talk-btn d-inline-block">Lets talk ➤</a>
+            </div>
+
+        </div>
+
+        <!-- ২. নিচের সারি: Call, Email এবং Follow Me (৩ + ৫ + ৪ = ১২ ভাগ) -->
+        <div class="row align-items-center pt-4">
+            
+            <!-- Call অংশ -->
+            <div class="col-12 col-md-4 col-lg-3 mb-4 mb-md-0">
+                <span>Call:</span>
+                <h5>+9984748473833</h5>
+            </div>
+
+            <!-- Email অংশ -->
+            <div class="col-12 col-md-4 col-lg-5 mb-4 mb-md-0">
+                <span>Email:</span>
+                <h5>dfsush@gmail.com</h5>
+            </div>
+
+            <!-- Follow Me ও সোশ্যাল আইকন -->
+            <div class="col-12 col-md-4 col-lg-4 d-flex align-items-center justify-content-lg-end">
+                <span class="me-3">Follow Me:</span>
+                <div class="social-links d-flex gap-2">
+                    <a href="#">Bē</a>
+                    <a href="#">🌐</a>
+                    <a href="#">📷</a>
+                </div>
+            </div>
+
+        </div>
+       
+    </div>
+    <script>
+    document.querySelector('.newsletter-box').addEventListener('click', function() {
+        this.classList.toggle('clicked-color');
+    });
+</script>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js" integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu" crossorigin="anonymous"></script>
+  </body>
+</html>
